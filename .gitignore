@@ -1,4 +1,3 @@
 .vscode/
 *.ipynb
-data/*
 .DS_Store
