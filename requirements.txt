@@ -1,0 +1,2 @@
+llama-index[local_models]
+sentence-transformers
