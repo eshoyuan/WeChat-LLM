@@ -1,7 +1,13 @@
-# WeChat-LLM: Build LLM to Mimic Your WeChat Style / 根据微信聊天记录定制私人聊天机器人
+# WeChat-LLM: 根据微信聊天记录定制私人聊天机器人
 
 ## 项目简介
 WeChat-LLM 是一个基于RAG的聊天机器人, 可以根据微信聊天记录定制模仿你的聊天风格的私人聊天机器人. 尝试使用LoRA对7b/13b的模型进行微调, 发现效果很差, 基于RAG的模型效果更好.
+
+
+## 项目实现
+基于LlamaIndex实现, 使用Sentence Window Retrieval, 通过从历史聊天记录中检索相关的句子, 作为few-shot的输入, 通过prompt让模型学习语言风格, 从而实现模仿聊天风格的目的. 具体流程如下图所示: 
+
+![](img/diagram.png)
 
 ## 使用
 
